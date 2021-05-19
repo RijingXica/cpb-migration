@@ -1,0 +1,9 @@
+{
+	"name": "adf-cpb-migration-dev",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5e809eab-6ecc-4559-8012-adaa48d098eb",
+		"tenantId": "f5407ee2-0fd3-42db-b461-c7ca916b67bb"
+	}
+}
