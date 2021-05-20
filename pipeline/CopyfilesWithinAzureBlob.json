@@ -4,7 +4,7 @@
 		"description": "using copy data tools to copy data from a folder in Azure Blob Storage to another",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "CopyDataBlob",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -16,8 +16,37 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"deleteFilesAfterCompletion": false
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
+					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						}
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "MovieCSV",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MovieCSVCleansed",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"folder": {
