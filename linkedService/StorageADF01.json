@@ -10,7 +10,7 @@
 					"referenceName": "xrjkvdev",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "storageKey"
+				"secretName": "storageKey2"
 			}
 		}
 	}
