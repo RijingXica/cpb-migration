@@ -1,0 +1,10 @@
+{
+	"name": "xrjkvdev",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://xrj-dev-kv.vault.azure.net/"
+		}
+	}
+}

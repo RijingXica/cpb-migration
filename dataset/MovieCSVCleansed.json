@@ -1,0 +1,19 @@
+{
+	"name": "MovieCSVCleansed",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StorageADF01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "movieCleansed.csv",
+				"folderPath": "Silver",
+				"container": "landing"
+			}
+		}
+	}
+}
