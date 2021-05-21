@@ -1,0 +1,19 @@
+{
+	"name": "Bin_MovieCSVCopied",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageADF02",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "movieCopied.csv",
+				"folderPath": "Silver",
+				"container": "landing"
+			}
+		}
+	}
+}
