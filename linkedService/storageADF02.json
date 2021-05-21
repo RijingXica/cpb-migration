@@ -1,0 +1,12 @@
+{
+	"name": "storageADF02",
+	"properties": {
+		"description": "link service to blob storage authenticated using managed identity",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://storage4adfdev.blob.core.windows.net",
+			"accountKind": "StorageV2"
+		}
+	}
+}
