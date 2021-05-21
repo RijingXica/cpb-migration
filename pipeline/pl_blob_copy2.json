@@ -1,0 +1,10 @@
+{
+	"name": "pl_blob_copy2",
+	"properties": {
+		"description": "copy blob from one folder to another. Storage acct authenticated using ADF managed id",
+		"folder": {
+			"name": "IngestionRaw"
+		},
+		"annotations": []
+	}
+}
